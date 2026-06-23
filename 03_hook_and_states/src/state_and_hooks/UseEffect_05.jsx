@@ -10,13 +10,15 @@ const UseEffect_05 = () => {
       try {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
 
+        if (!res.ok) {
+          setError("no data found");
+        }
+
         const data = await res.json();
 
         console.log("data", data);
 
-        if (!data) {
-          setError("no data found");
-        }
+
 
         setUser(data);
       } catch (error) {
@@ -48,12 +50,15 @@ const UseEffect_05 = () => {
             </thead>
             <tbody>
               {user.map((u) => {
+
+                const { id, name, address: { city, address } } = u
+
                 return (
                   <tr key={u.id}>
-                    <td>{u.id}</td>
-                    <td>{u.name}</td>
+                    <td>{id}</td>
+                    <td>{name}</td>
                     <td>{u.email}</td>
-                    <td>{u.address["street"]}</td>
+                    <td>{city}</td>
                   </tr>
                 );
               })}

@@ -9,7 +9,9 @@ const UseEffect_06 = () => {
       try {
         const res = await axios("https://jsonplaceholder.typicode.com/users");
 
+    
         console.log("res", res);
+        
 
         setUser(res.data);
       } catch (error) {

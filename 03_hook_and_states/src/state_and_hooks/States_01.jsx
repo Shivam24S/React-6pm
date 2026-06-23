@@ -11,6 +11,8 @@ const States_01 = () => {
     console.log("handle increment called", count);
   };
 
+  console.log("this will rendered again and again whenever state changes")
+
   return (
     <>
       <h1>count value {count}</h1>
