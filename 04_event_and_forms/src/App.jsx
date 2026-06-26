@@ -5,6 +5,8 @@ import OnSubmit_03 from './events/OnSubmit_03'
 import PassingArgument from './events/PassingArgument_04'
 import Conditional_01 from './conditional/Conditional_01'
 import Conditional_02 from './conditional/Conditional_02'
+import Uncontrolled_01 from './forms/Uncontrolled_01'
+import Controlled_02 from './forms/Controlled_02'
 
 const App = () => {
   return (
@@ -27,7 +29,18 @@ const App = () => {
 
       {/* <Conditional_01/> */}
 
-      <Conditional_02/>
+      {/* <Conditional_02/> */}
+
+
+      {/* forms */}
+
+      {/*uncontrolled  */}
+
+      {/* <Uncontrolled_01 /> */}
+
+      {/* controlled */}
+
+      <Controlled_02 />
 
 
 
