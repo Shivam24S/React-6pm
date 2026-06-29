@@ -7,6 +7,8 @@ import Conditional_01 from './conditional/Conditional_01'
 import Conditional_02 from './conditional/Conditional_02'
 import Uncontrolled_01 from './forms/Uncontrolled_01'
 import Controlled_02 from './forms/Controlled_02'
+import Validation_03 from './forms/Validation_03'
+import Formik_04 from './forms/Formik_04'
 
 const App = () => {
   return (
@@ -40,7 +42,11 @@ const App = () => {
 
       {/* controlled */}
 
-      <Controlled_02 />
+      {/* <Controlled_02 /> */}
+
+      {/* <Validation_03 /> */}
+
+      <Formik_04 />
 
 
 
